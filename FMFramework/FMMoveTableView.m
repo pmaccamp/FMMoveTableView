@@ -224,11 +224,7 @@
         return;
     }
     
-    [self beginUpdates];
-    [self deleteRowsAtIndexPaths:@[self.movingIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-    [self insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
     self.movingIndexPath = newIndexPath;
-    [self endUpdates];
 }
 
 
